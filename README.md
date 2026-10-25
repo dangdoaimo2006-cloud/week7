@@ -1,48 +1,34 @@
-# Week 7 - OOP
+# Quan ly thiet bi giang day
 
-Bai tap quan ly va cap phat thiet bi phong day, viet bang Python.
+## Muc tieu
 
-## Tai lieu thiet ke
+Xay dung chuong trinh quan ly va cap phat dieu khien may chieu, dieu khien dieu hoa va micro khong day. Du an su dung ke thua, da hinh, repository tong quat va cac chien luoc lua chon.
 
-- `docs/analysis.md`: phan tich yeu cau nghiep vu.
-- `docs/class-diagram.md`: danh sach lop va so do UML ban dau.
+## Cau truc
 
-## Code da bo sung - Giai doan 2
-
-- `src/device.py`: `DeviceStatus`, `TeachingDevice`, `ProjectorRemote`, `AirConditionerRemote`, `WirelessMicrophone` va `DeviceNotReadyException`.
-- `tests/test_device.py`: kiem thu hanh vi co ban cua cac loai thiet bi.
+- `src/device.py`: lop co so va cac loai thiet bi.
+- `src/repository.py`: repository tong quat trong bo nho.
+- `src/selection_strategy.py`: chien luoc chon uu tien cao nhat va chon ung vien dau tien.
+- `src/allocation_service.py`: dich vu loc, chon va cap phat thiet bi.
+- `tests/`: cac bo kiem thu.
+- `docs/analysis.md`: phan tich nghiep vu.
+- `docs/class-diagram.md`: mo ta so do lop.
 
 ## Chay kiem thu
 
-Mo terminal tai thu muc goc cua project va chay:
+Tu thu muc goc du an, chay:
 
-```powershell
+```bash
 python -m unittest discover -s tests -v
 ```
 
 ## Tien do
 
-- [x] Phan tich yeu cau nghiep vu ban dau
-- [x] Danh sach lop va so do UML ban dau
-- [x] Cai dat cac lop thiet bi
-- [x] Viet kiem thu ban dau cho cac lop thiet bi
-- [x] Cai dat repository generic
-- [ ] Cai dat chien luoc lua chon
-- [ ] Cai dat dich vu cap phat
-- [ ] Kiem thu day du cac yeu cau trong de
-
-Luu y: day la phien ban dang phat trien theo tung giai doan, chua phai toan bo chuong trinh.
+- [x] Phan tich nghiep vu va mo ta lop.
+- [x] Lop thiet bi va cac lop dan xuat.
+- [x] Repository tong quat.
+- [x] Cac chien luoc lua chon.
+- [x] Dich vu cap phat thiet bi.
+- [x] Bo kiem thu cho cac chuc nang chinh.
 
 
-## Code da bo sung - Giai doan 3
-
-- `src/repository.py`: bo sung `IIdentifiable`, `IRepository`, `InMemoryRepository` va `DuplicateIdException`. Repository ho tro them, xoa, tim theo ID, lay danh sach va loc theo dieu kien.
-- `tests/test_repository.py`: kiem thu ID trung, tim kiem, xoa, loc va luu nhieu loai thiet bi trong cung repository.
-
-## Tien do cap nhat
-
-- [x] Cai dat repository generic
-- [x] Kiem thu repository voi nhieu loai thiet bi
-- [ ] Cai dat chien luoc lua chon
-- [ ] Cai dat dich vu cap phat
-- [ ] Kiem thu day du cac yeu cau trong de
