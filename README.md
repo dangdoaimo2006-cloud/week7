@@ -26,9 +26,23 @@ python -m unittest discover -s tests -v
 - [x] Danh sach lop va so do UML ban dau
 - [x] Cai dat cac lop thiet bi
 - [x] Viet kiem thu ban dau cho cac lop thiet bi
-- [ ] Cai dat repository generic
+- [x] Cai dat repository generic
 - [ ] Cai dat chien luoc lua chon
 - [ ] Cai dat dich vu cap phat
 - [ ] Kiem thu day du cac yeu cau trong de
 
 Luu y: day la phien ban dang phat trien theo tung giai doan, chua phai toan bo chuong trinh.
+
+
+## Code da bo sung - Giai doan 3
+
+- `src/repository.py`: bo sung `IIdentifiable`, `IRepository`, `InMemoryRepository` va `DuplicateIdException`. Repository ho tro them, xoa, tim theo ID, lay danh sach va loc theo dieu kien.
+- `tests/test_repository.py`: kiem thu ID trung, tim kiem, xoa, loc va luu nhieu loai thiet bi trong cung repository.
+
+## Tien do cap nhat
+
+- [x] Cai dat repository generic
+- [x] Kiem thu repository voi nhieu loai thiet bi
+- [ ] Cai dat chien luoc lua chon
+- [ ] Cai dat dich vu cap phat
+- [ ] Kiem thu day du cac yeu cau trong de
